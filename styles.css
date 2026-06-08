@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+  color: #1a1a2e;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 12px;
+}
+
+label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+input {
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+input[readonly] {
+  background: #f7f7f7;
+  color: #666;
+}
+
+.cep-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cep-wrapper input {
+  flex: 1;
+}
+
+#cep-status {
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"] {
+  background: #4f46e5;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #4338ca;
+}
+
+button#btnLimpar {
+  background: #f1f1f1;
+  color: #444;
+}
+
+button#btnLimpar:hover {
+  background: #e0e0e0;
+}
+
+#mensagem {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sucesso { color: #16a34a; }
+.erro    { color: #dc2626; }
